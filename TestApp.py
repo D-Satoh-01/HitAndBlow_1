@@ -31,6 +31,11 @@ def ButtonClick():
     
         if count_hit == 4:
             st.text('正解')
+        else:
+            st.text('ヒット')
+            st.text(count_hit)
+            st.text('ブロー')
+            st.text(count_blow)
         
 number_answer = [(random.randint)(0,9),
                  (random.randint)(0,9),
