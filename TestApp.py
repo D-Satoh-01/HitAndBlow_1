@@ -1,7 +1,7 @@
 import random
 import streamlit as st
 
-st.header('ヒット&ブロー（数当てゲーム）')
+st.title('ヒット&ブロー（数当てゲーム）')
 
 def ButtonClick():
     number_inputted = editbox_1
@@ -34,17 +34,19 @@ def ButtonClick():
         if count_hit == 4:
             st.text('正解')
         else:
-            st.text('ヒット（数値と位置の両方が解答と合致している数）：')
-            st.text(count_hit)
-            st.text('ブロー（位置は異なるが解答の数値を含んでいる数）：')
-            st.text(count_blow)
+            st.subheader('ヒット（数値と位置の両方が解答と合致している数）：')
+            st.subheader(count_hit)
+            st.subheader('ブロー（位置は異なるが解答の数値を含んでいる数）：')
+            st.subheader(count_blow)
      
 number_answer = [(random.randint)(0,9),
                  (random.randint)(0,9),
                  (random.randint)(0,9),
                  (random.randint)(0,9)]
 
-editbox_1 = st.text_input('4桁の数字を入力してください', key='eb_1')
+st.subheader ('4桁の数字を入力してください')
+
+editbox_1 = st.text_input(' ')
 
 button_1 = st.button('チェック', on_click=ButtonClick)
 
