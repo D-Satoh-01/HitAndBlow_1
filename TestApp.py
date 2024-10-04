@@ -1,7 +1,7 @@
 import random
 import streamlit as st
 
-st.title('ヒット&ブロー（数当てゲーム）')
+st.header('ヒット&ブロー（数当てゲーム）')
 
 def ButtonClick():
     number_inputted = editbox_1
