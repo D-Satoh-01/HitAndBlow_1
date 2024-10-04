@@ -2,7 +2,7 @@ import random
 import streamlit as st
 
 def ButtonClick():
-    number_inputted = editbox_1.get()
+    number_inputted = editbox_1
 
     flag = False
     if len(number_inputted) != 4:
@@ -43,8 +43,8 @@ st.title('ヒット&ブロー')
 
 box_history = st.text('')
 
-label_1 = st.text('4桁の数字を入力してください')
+label_1 = st.text('')
 
-editbox_1 = st.text_input('4桁の数字を入力してください')
+editbox_1 = st.text_input('4桁の数字を入力してください', key='eb_1')
 
 button_1 = st.button('チェック', on_click=ButtonClick)
