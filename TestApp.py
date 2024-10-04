@@ -6,12 +6,12 @@ def ButtonClick():
 
     flag = False
     if len(number_inputted) != 4:
-        st.text("エラー", "入力された値が4桁ではありません")
+        st.text('入力された値が4桁ではありません')
     else:
         check_int_0_9 = True
         for i in range (4):  # 以下を4回繰り返す
             if (number_inputted[i] < "0") or (number_inputted[i] > "9"):
-                st.text("エラー：入力された値が数字ではありません")
+                st.text('入力された値が数字ではありません')
                 check_int_0_9 = False
                 break
             if check_int_0_9:
@@ -30,7 +30,7 @@ def ButtonClick():
                     break
     
         if count_hit == 4:
-            st.text("", "正解")
+            st.text('正解')
         else:
             box_history.insert(st.END, number_inputted + " / H:" + str(count_hit) + " B:" + str(count_blow) + "\n")
         
@@ -43,7 +43,7 @@ st.title('ヒット&ブロー')
 
 box_history = st.text('')
 
-label_1 = st.text(text="4桁の数字を入力してください")
+label_1 = st.text('4桁の数字を入力してください')
 
 editbox_1 = st.text_input('', '4桁の数字を入力してください')
 
