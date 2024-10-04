@@ -19,13 +19,11 @@ def ButtonClick():
             if check_int_0_9:
                 flag = True
     if flag:
-        global count_hit
         count_hit = 0
         for i in range(4):
             if number_answer[i] == int(number_inputted[i]):
                 count_hit = count_hit + 1
                 
-        global count_blow
         count_blow = 0
         for i_1 in range(4):
             for i_2 in range(4):
@@ -36,12 +34,9 @@ def ButtonClick():
         if count_hit == 4:
             st.text('正解')
         else:
-            show_count_hit = st.text('ヒット（数値と位置の両方が解答と合致している数）：'), st.text(count_hit)
-            show_count_blow = st.text('ブロー（位置は異なるが解答の数値を含んでいる数）：'), st.text(count_blow)
-            show_count_hit
-            show_count_blow
-            
-        
+            st.text('ヒット（数値と位置の両方が解答と合致している数）：'), st.text(count_hit)
+            st.text('ブロー（位置は異なるが解答の数値を含んでいる数）：'), st.text(count_blow)
+     
 number_answer = [(random.randint)(0,9),
                  (random.randint)(0,9),
                  (random.randint)(0,9),
