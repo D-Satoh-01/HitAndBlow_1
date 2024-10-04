@@ -32,7 +32,7 @@ def ButtonClick():
         if count_hit == 4:
             st.text("", "正解")
         else:
-            box_history.insert(tk.END, number_inputted + " / H:" + str(count_hit) + " B:" + str(count_blow) + "\n")
+            box_history.insert(st.END, number_inputted + " / H:" + str(count_hit) + " B:" + str(count_blow) + "\n")
         
 number_answer = [(random.randint)(0,9),
                  (random.randint)(0,9),
@@ -41,7 +41,7 @@ number_answer = [(random.randint)(0,9),
 
 st.title('ヒット&ブロー')
 
-box_history = st.text()
+box_history = st.text('')
 box_history.place(x=400, y=0, width=200, height=400)
 
 label_1 = st.text(text="4桁の数字を入力してください")
