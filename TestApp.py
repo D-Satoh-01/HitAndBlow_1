@@ -42,13 +42,9 @@ number_answer = [(random.randint)(0,9),
 st.title('ヒット&ブロー')
 
 box_history = st.text('')
-box_history.place(x=400, y=0, width=200, height=400)
 
 label_1 = st.text(text="4桁の数字を入力してください")
-label_1.place(x = 120, y = 20)
 
 editbox_1 = st.text_input('', '4桁の数字を入力してください')
-editbox_1.place(x = 120, y = 60)
 
 button_1 = st.Button(text = "チェック", command=ButtonClick)
-button_1.place(x = 220, y = 60)
