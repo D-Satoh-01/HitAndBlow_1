@@ -35,10 +35,11 @@ with st.container():
             if count_hit == 4:
                 st.text('正解')
             else:
-                st.text('ヒット（数値と位置の両方が解答と合致している数）')
-                st.text(count_hit)
-                st.text('ブロー（位置は異なるが解答の数値を含んでいる数）')
-                st.text(count_blow)
+                with st.container():
+                    st.text('ヒット（数値と位置の両方が解答と合致している数）')
+                    st.text(count_hit)
+                    st.text('ブロー（位置は異なるが解答の数値を含んでいる数）')
+                    st.text(count_blow)
         
 number_answer = [(random.randint)(0,9),
                 (random.randint)(0,9),
