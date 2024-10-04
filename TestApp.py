@@ -32,7 +32,7 @@ def ButtonClick():
         if count_hit == 4:
             st.text('正解')
         else:
-            box_history.insert(st.END, number_inputted + " / H:" + str(count_hit) + " B:" + str(count_blow) + "\n")
+            box_history.insert(number_inputted + " / H:" + str(count_hit) + " B:" + str(count_blow) + "\n")
         
 number_answer = [(random.randint)(0,9),
                  (random.randint)(0,9),
