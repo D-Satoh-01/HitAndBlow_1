@@ -45,6 +45,6 @@ box_history = st.text('')
 
 label_1 = st.text('4桁の数字を入力してください')
 
-editbox_1 = st.text_input('', '4桁の数字を入力してください')
+editbox_1 = st.text_input('4桁の数字を入力してください')
 
 button_1 = st.button('チェック', on_click=ButtonClick)
